@@ -10,10 +10,17 @@
 <body>
   <P style="margin:0 auto"><h1>筷子网开发者主页</h1></P>
   <P style="margin:0 auto"><a href="module/app"><div id="qrcode"/><br>
-  <h3 style="margin:0 auto">点击二维码进入APP下载页面</h3></a></P>
+  <h3 style="margin:0 auto">扫描下方二维码或点击此链接进入APP下载页面</h3></a></P>
   <script>
   	var content="https://"+window.location.hostname+"/module/app"
-  	new QRCode(document.getElementById('qrcode'), content);
+  	new QRCode('qrcode', {
+  text: 'your content',
+  width: 256,
+  height: 256,
+  colorDark : '#000000',
+  colorLight : '#ffffff',
+  correctLevel : QRCode.CorrectLevel.H
+});
   </script>
 </body>
 </html>

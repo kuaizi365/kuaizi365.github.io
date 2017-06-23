@@ -4,10 +4,16 @@
 <meta charset='utf-8'>
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 <title>APP内测</title>
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript" src="js/qrcode.min.js" ></script>
 </head>
 <body>
   <P style="margin:0 auto"><h1>筷子网开发者主页</h1></P>
-  <P style="margin:0 auto"><a href="module/app"><img style="margin:0 auto" src="img/ic_qrcode_by_app_test.png"/><br>
-  <h3 style="margin:0 auto">点击二维码进入下载页面</h3></a></P>
+  <P style="margin:0 auto"><a href="module/app"><div id="qrcode"/><br>
+  <h3 style="margin:0 auto">点击二维码进入APP下载页面</h3></a></P>
+  <script>
+  	var content="https://"+window.location.hostname+"/module/app"
+  	new QRCode(document.getElementById('qrcode'), content);
+  </script>
 </body>
 </html>

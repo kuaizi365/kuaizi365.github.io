@@ -1,0 +1,39 @@
+[
+ {
+	 "name":"筷子网APP",
+	 "release":[
+	               {
+	            	   	"name":"应用宝",
+	            	   	"link":"http://m.baidu.com",
+	            	   	"home":"http://m.baidu.com",
+	            	   	"remark":"暂未上架"
+	               },
+	               {
+	            	   	"name":"Google Play",
+	            	   	"link":"http://m.baidu.com",
+	            	   	"home":"http://m.baidu.com",
+	            	   	"remark":"暂未开通"
+	               }
+	               ],
+	     "debug":[
+	                 {
+	                	 "name":"公网下载",
+	                	 "remark":"速度慢",
+	                	 "link":"http://m.baidu.com",
+	                 },
+	                 {
+	                	 "name":"内网下载",
+	                	 "remark":"速度快",
+	                	 "link":"http://m.baidu.com",
+	                 },
+	                 ],
+	                 "version":"版本号",
+	                 "size":"22.8M",
+	                 "icon":"https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=202fbd5f9d16fdfacc61cebcd5e6e731/f636afc379310a5534d99880b74543a9832610c0.jpg",
+	                 "time":"2017年06月30日22:51:39"
+	                 "record":[
+	                           "修复大量bug",
+	                           "更新了推送sdk"
+	                           ]
+ }
+]

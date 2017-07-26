@@ -7,11 +7,25 @@
 		<meta http-equiv="pragma" content="no-cache">
 		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 		<meta http-equiv="expires" content="-1">
+		<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../js/qrcode.min.js"></script>
 		<title>筷子健康APP内测</title>
 	</head>
 
 	<body>
-		<h1>筷子健康APP</h1> 更新日志：（2017-07-07 16:21:47）
+		<h1>筷子健康APP</h1>
+		<div id="qrcode_this_page"></div>
+		<script>
+			new QRCode('qrcode_this_page', {
+				text: window.location.href,
+				width: 150,
+				height: 150,
+				colorDark: '#000000',
+				colorLight: '#ffffff',
+				correctLevel: QRCode.CorrectLevel.H
+			});
+		</script>
+		<br /> 更新日志：（2017-07-07 16:21:47）
 		<ol>
 			<li>修复已经指派回去的bug </li>
 
